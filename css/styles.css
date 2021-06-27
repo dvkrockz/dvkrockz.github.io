@@ -3013,3 +3013,14 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.video-item{
+  display:block;
+  width: 100%;
+  cursor: pointer;
+}
