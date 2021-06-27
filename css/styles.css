@@ -297,9 +297,9 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  min-height: 900px;
+  min-height: 700px;
   position: relative;
-  background: url(/images/Geometry-banner.jpg.jpg) no-repeat center;
+  background: url(/images/Geometry-banner.jpg) no-repeat center;
   background-size: cover; }
   .home_banner_area .banner_inner {
     position: absolute;
