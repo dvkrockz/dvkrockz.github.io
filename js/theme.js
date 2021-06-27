@@ -336,4 +336,31 @@
       ]
     });
   }
+
+    /*----------------------------------------------------*/
+  /*  Video Popup overlay
+    /*----------------------------------------------------*/
+    function loadVideoPlayer() {
+      var $this = this;
+      var vitems = $(".video-item");
+      var len = vitems.length;
+  
+      for (var i = 0; i < len; ++i) {
+        vitems.eq(i).attr("id", "item" + i);
+      }
+  
+      vitems.each(function(index, thisitem) {
+        var thisitem = $(thisitem);
+        var thisitemBuild = new YoutubeOverlayModule({
+          sourceUrl: thisitem.attr("data-video"),
+          triggerElement: "#" + thisitem.attr("id"),
+          progressCallback: function() {
+            console.log("Item activated");
+          }
+        });
+        thisitemBuild.activateDeployment();
+      });
+    }
+    loadVideoPlayer();
+
 })(jQuery);
